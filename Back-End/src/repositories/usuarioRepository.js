@@ -14,13 +14,13 @@ export const usuarioRepository = {
         return res.rows[0]
     },
 
-    async FindById(id) {
+    async findById(id) {
         const sql = ('SELECT * FROM tb_usuario WHERE id_usuario = $1 ;');
         const res = await query(sql, [id]);
         return res.rows[0]
     },
 
-    async FindAll() {
+    async findAll() {
         const sql = ('SELECT * FROM tb_usuario;');
         const res = await query(sql);
         return res.rows[0]

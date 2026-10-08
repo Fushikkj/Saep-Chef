@@ -1,4 +1,3 @@
-import { jsx } from "react/jsx-runtime";
 import { query } from "../config/db";
 
 export const usuarioRepository = {

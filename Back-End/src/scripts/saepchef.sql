@@ -29,21 +29,3 @@ id_receita INT REFERENCES tb_receita(id_receita) NOT NULL,
 created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,
 updated_at TIMESTAMP WITHOUT TIME ZONE
 );
-
-SELECT * FROM tb_usuario;
-SELECT * FROM tb_receita;
-SELECT * FROM tb_favoritar;
-
-INSERT INTO tb_usuario(nome, nome_usuario, email, senha, imagem_usuario,
-tipo, created_at, updated_at) VALUES
-('Chef Marco Bianchi', 'chef1', 'chef1@saepchef.com', 123456, 'chef1.jpg', 'chef', '2026-01-10 09:15:00', '2026-01-10 09:15:00'),
-('Chef Ana Ferreira', 'chef2','chef2@saepchef.com', 123456,'chef2.jpg','chef','2026-01-12 10:30:00','2026-01-12 10:30:00'),
-('Chef Lucas Tanaka', 'chef3', 'chef3@saepchef.com', 123456,'chef3.jpg','chef','2026-01-14 14:20:00','2026-01-14 14:20:00'
-),
-('Mariana Costa', 'usuario1', 'usuario1@gmail.com', 123456,'usuario1.jpg','comum','2026-01-16 08:45:00','2026-01-16 08:45:00'
-),
-('Rafael Souza', 'usuario2', 'usuario2@gmail.com', 123456,'usuario2.jpg','comum','2026-01-18 11:00:00','2026-01-18 11:00:00'
-),
-('Beatriz Lima', 'usuario3', 'usuario3@gmail.com', 123456,'usuario3.jpg','comum','2026-01-20 16:10:00','2026-01-20 16:10:00'
-);
-

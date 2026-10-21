@@ -16,7 +16,6 @@ app.use(express.json());
 app.use("/usuario", usuarioRoutes);
 app.use("/receitas", receitaRoutes);
 
-// A rota de favoritos será adicionada quando seu arquivo de rotas estiver pronto.
 
 const PORT = process.env.PORT || 3000;
 

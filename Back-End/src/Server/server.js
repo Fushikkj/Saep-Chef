@@ -21,7 +21,7 @@ app.use(express.json());
 app.use("/usuario", router);
 //app.use("/receitas", receitasRoutes);
 //app.use("/favoritos", favoritosRoutes);
-
+ 
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {

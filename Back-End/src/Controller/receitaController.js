@@ -1,19 +1,18 @@
-import { receitaRepository } from "../repositories/receitaRepository.js";
+import { receitaService } from "../services/receitaService.js";
 
 export const receitaController = {
 
     async create(req, res) {
-        try {
-            const receita = await receitaRepository.create(req.body);
+    try {
+        const receita = await receitaService.create(req.body);
 
-            res.status(201).json(receita);
-        } catch (error) {
-            res.status(500).json({
-                erro: error.message
-            });
-        }
-        
-    },
+        res.status(201).json(receita);
+    } catch (error) {
+        res.status(500).json({
+            erro: error.message
+        });
+    }
+},
 
     async findById(req, res) {
         try {
@@ -38,6 +37,7 @@ export const receitaController = {
             });
         }
     },
+
 
     async update(req, res) {
         try {

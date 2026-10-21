@@ -16,12 +16,11 @@ export const receitaRepository = {
         return res.rows[0]
     },
 
-    async findAll() {
-        const sql = ('SELECT * FROM tb_receita;');
-        const res = await query(sql);
-        return res.rows
-    },
-
+   async findAll() {
+    const sql = "SELECT * FROM tb_receita;";
+    const res = await query(sql);
+    return res.rows;
+},
     async update(id, receita) {
         const { titulo_receita, origem_receita, id_usuario, url_imagem } = receita;
         const sql = ('UPDATE tb_receita SET titulo_receita = $1, origem_receita = $2, id_usuario = $3, url_imagem = $4 WHERE id_receita = $5 RETURNING * ');

@@ -1,4 +1,4 @@
-import { receitaRepository } from "../repositories/receitaRepository";
+import { receitaRepository } from "../repositories/receitaRepository.js";
 
 export const receitaService = {
 
